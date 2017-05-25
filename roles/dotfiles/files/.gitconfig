@@ -1,0 +1,7 @@
+[user]
+  name = Philipp Rieber
+  email = philipp.rieber@ottonova.de
+
+[core]
+    excludesfile = ~/.gitignore
+    attributesfile = ~/.gitattributes

@@ -1,0 +1,32 @@
+- name: Tap Homebrew repositories
+  homebrew_tap:
+    name: '{{ item }}'
+    state: present
+  with_items:
+    - homebrew/dupes
+    - homebrew/versions
+    - homebrew/php
+    - caskroom/cask
+
+- name: Ensure Java is present
+  homebrew_cask:
+    name: java
+    state: present
+    update_homebrew: yes
+
+- name: Install Homebrew packages
+  homebrew:
+    name: '{{ item }}'
+    state: latest
+    update_homebrew: yes
+  with_items:
+    - ant
+    - bash
+    - bash-completion@2
+    - coreutils
+    - git
+    - httpie
+    - jq
+    - tree
+    - watch
+    - wget

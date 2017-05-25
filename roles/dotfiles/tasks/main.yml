@@ -1,0 +1,8 @@
+- name: Install dotfiles
+  copy:
+    src: '{{ item }}'
+    dest: ~/
+  with_items:
+   - .editorconfig
+   - .gitignore
+   - .gitconfig 

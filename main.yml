@@ -1,0 +1,17 @@
+---
+- name: Provision my MacBook
+  hosts: all
+  connection: local
+  roles:
+    - role: common
+      tags: [common]
+    - role: cask
+      tags: [cask]
+    - role: brew
+      tags: [brew]
+    - role: mas
+      tags: [mas]
+    - role: dotfiles
+      tags: [dotfiles]
+    #- role: macos
+    #  tags: [macos]

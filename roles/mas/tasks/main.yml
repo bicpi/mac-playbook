@@ -1,0 +1,26 @@
+- name: Ensure MAS is installed
+  homebrew:
+    name: mas
+    state: present
+
+- name: Ensure configured MAS apps are installed.
+  command: mas install "{{ item.id }}"
+  with_items:
+    - id: 918858936
+      name: Airmail 3
+    - id: 485812721
+      name: TweetDeck
+    - id: 492729790
+      name: Snagit
+    - id: 410628904
+      name: Wunderlist
+    - id: 568494494
+      name: Pocket
+    - id: 865500966
+      name: feedly
+    - id: 876540291
+      name: Copy'em Paste
+    - id: 443987910
+      name: 1Password
+    #- id: 412448059
+    #  name: ForkLift
