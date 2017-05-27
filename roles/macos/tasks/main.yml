@@ -1,9 +1,3 @@
 ---
-- name: Copy .macos configuration file
-  copy:
-    src: .macos
-    dest: ~/
-    mode: 0700
 - name: Configure macos
-  shell: ~/.macos
-  #changed_when: false
+  script: .macos

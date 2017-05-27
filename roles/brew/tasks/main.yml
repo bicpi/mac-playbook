@@ -6,7 +6,6 @@
     - homebrew/dupes
     - homebrew/versions
     - homebrew/php
-    - caskroom/cask
 
 - name: Ensure Java is present
   homebrew_cask:
@@ -24,9 +23,14 @@
     - bash
     - bash-completion@2
     - coreutils
+    - docker-clean
+    - findutils
     - git
+    - go
     - httpie
     - jq
+    - homebrew/php/composer
+    - homebrew/php/php71
     - tree
     - watch
     - wget

@@ -3,8 +3,15 @@
     name: mas
     state: present
 
+- name: List installed MAS apps
+  command: mas list
+  register: mas_list
+  check_mode: no
+  changed_when: false
+
 - name: Ensure configured MAS apps are installed.
   command: mas install "{{ item.id }}"
+  when: item.id|string not in mas_list.stdout
   with_items:
     - id: 918858936
       name: Airmail 3
@@ -20,7 +27,11 @@
       name: feedly
     - id: 876540291
       name: Copy'em Paste
-    - id: 443987910
-      name: 1Password
+    # Install 1Password from account website, otherwise this fails
+    #- id: 443987910
+    #  name: 1Password
     #- id: 412448059
     #  name: ForkLift
+
+- name: Upgrade all MAS apps
+  command: mas upgrade

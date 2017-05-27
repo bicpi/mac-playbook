@@ -9,9 +9,11 @@
       tags: [cask]
     - role: brew
       tags: [brew]
+    - role: atom
+      tags: [atom]
     - role: mas
       tags: [mas]
     - role: dotfiles
       tags: [dotfiles]
-    #- role: macos
-    #  tags: [macos]
+    - role: macos
+      tags: [macos]

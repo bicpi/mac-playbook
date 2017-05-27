@@ -1,0 +1,21 @@
+- name: Ensure atom is present
+  homebrew_cask:
+    name: atom
+    state: present
+    update_homebrew: yes
+
+- name: List installed atom packages
+  command: apm list -pib
+  register: apm_list
+  check_mode: no
+  changed_when: false
+
+- name: Ensure configured MAS apps are installed.
+  command: apm install "{{ item }}"
+  when: item|string not in apm_list.stdout
+  with_items:
+    - atom-beautify
+    - split-diff
+
+- name: Upgrade all atom packages
+  command: apm upgrade

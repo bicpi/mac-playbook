@@ -1,7 +1,8 @@
-# Update path so that brew coreutils are the default w/0 g prefix
-# PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+- name: Ensure ~/bin directory
+  file:
+    path: '~/bin'
+    state: directory
 
-# SSH
 - name: Ensure SSH key
   user:
     name: philipp.rieber
