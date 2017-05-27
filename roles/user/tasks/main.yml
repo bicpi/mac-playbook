@@ -1,0 +1,21 @@
+- name: Ensure ~/bin directory
+  file:
+    path: '~/bin'
+    state: directory
+
+- name: Ensure brew bash in /etc/shells
+  become: true
+  lineinfile:
+    path: /etc/shells
+    line: /usr/local/bin/bash
+
+- name: Ensure SSH key & shell
+  user:
+    name: philipp.rieber
+    generate_ssh_key: yes
+
+- name: Switch to brew bash
+  shell: chsh -s /usr/local/bin/bash
+
+# In order to use this build of bash as your login shell,
+# it must be added to /etc/shells.

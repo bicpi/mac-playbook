@@ -3,8 +3,6 @@
   hosts: all
   connection: local
   roles:
-    - role: common
-      tags: [common]
     - role: cask
       tags: [cask]
     - role: brew
@@ -17,3 +15,5 @@
       tags: [dotfiles]
     - role: macos
       tags: [macos]
+    - role: user
+      tags: [user]

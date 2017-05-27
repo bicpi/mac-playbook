@@ -1,9 +1,0 @@
-- name: Ensure ~/bin directory
-  file:
-    path: '~/bin'
-    state: directory
-
-- name: Ensure SSH key
-  user:
-    name: philipp.rieber
-    generate_ssh_key: yes
