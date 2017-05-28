@@ -19,6 +19,8 @@
       name: TweetDeck
     - id: 492729790
       name: Snagit
+    #- id: 1102432077
+    #  name: Snagit 4
     - id: 410628904
       name: Wunderlist
     - id: 568494494
@@ -27,11 +29,12 @@
       name: feedly
     - id: 876540291
       name: Copy'em Paste
+    #- id: 412448059
+    #  name: ForkLift
     # Install 1Password from account website, otherwise this fails
     #- id: 443987910
     #  name: 1Password
-    #- id: 412448059
-    #  name: ForkLift
 
 - name: Upgrade all MAS apps
   command: mas upgrade
+  changed_when: false

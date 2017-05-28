@@ -1,0 +1,4 @@
+- name: Ensure ~/bin directory
+  file:
+    path: '~/bin'
+    state: directory

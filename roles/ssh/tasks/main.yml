@@ -1,0 +1,4 @@
+- name: Ensure SSH key & shell
+  user:
+    name: philipp.rieber
+    generate_ssh_key: yes

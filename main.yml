@@ -3,17 +3,25 @@
   hosts: all
   connection: local
   roles:
-    - role: cask
-      tags: [cask]
+    - role: common
+      tags: [common]
     - role: brew
       tags: [brew]
+    - role: bash
+      tags: [bash]
     - role: atom
       tags: [atom]
+    - role: cask
+      tags: [cask]
     - role: mas
       tags: [mas]
     - role: dotfiles
       tags: [dotfiles]
     - role: macos
       tags: [macos]
-    - role: user
-      tags: [user]
+    - role: ssh
+      tags: [ssh]
+    - role: docker
+      tags: [docker]
+    - role: glances
+      tags: [glances]

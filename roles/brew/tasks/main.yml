@@ -20,10 +20,7 @@
     update_homebrew: yes
   with_items:
     - ant
-    - bash
-    - bash-completion@2
     - coreutils
-    - docker-clean
     - findutils
     - git
     - go
@@ -34,3 +31,9 @@
     - tree
     - watch
     - wget
+
+- name: Upgrade all homebrew packages
+  homebrew:
+    update_homebrew: yes
+    upgrade_all: yes
+  changed_when: false 

@@ -19,3 +19,4 @@
 
 - name: Upgrade all atom packages
   command: apm upgrade
+  changed_when: false  

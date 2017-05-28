@@ -1,0 +1,18 @@
+- name: Install bash
+  homebrew:
+    name: '{{ item }}'
+    state: latest
+    update_homebrew: yes
+  with_items:
+    - bash
+    - bash-completion@2
+
+- name: Install dotfiles
+  copy:
+    src: '{{ item }}'
+    dest: ~/
+  with_items:
+    - .aliases
+    - .bash_profile
+    - .bash_prompt
+    - .bashrc
