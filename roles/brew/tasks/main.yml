@@ -20,6 +20,7 @@
     update_homebrew: yes
   with_items:
     - ant
+    - awscli
     - coreutils
     - findutils
     - git
@@ -36,4 +37,4 @@
   homebrew:
     update_homebrew: yes
     upgrade_all: yes
-  changed_when: false 
+  changed_when: false
