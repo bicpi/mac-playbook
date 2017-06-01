@@ -27,8 +27,9 @@
     - go
     - httpie
     - jq
-    - homebrew/php/composer
     - homebrew/php/php71
+    - homebrew/php/php71-mcrypt
+    - homebrew/php/composer
     - tree
     - watch
     - wget
