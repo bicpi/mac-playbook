@@ -17,6 +17,7 @@
     state: present
     update_homebrew: yes
   with_items:
+    - adobe-acrobat-reader
     - aerial
     - atom
     - caffeine
