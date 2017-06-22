@@ -30,6 +30,7 @@
     - homebrew/php/php71
     - homebrew/php/php71-mcrypt
     - homebrew/php/composer
+    - homebrew/php/box
     - tree
     - watch
     - wget

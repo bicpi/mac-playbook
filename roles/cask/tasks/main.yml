@@ -18,6 +18,7 @@
     update_homebrew: yes
   with_items:
     - adobe-acrobat-reader
+    - airdroid
     - aerial
     - atom
     - caffeine
