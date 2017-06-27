@@ -3,5 +3,8 @@
   email = philipp.rieber@ottonova.de
 
 [core]
-    excludesfile = ~/.gitignore
-    attributesfile = ~/.gitattributes
+  excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
+
+[commit]
+  gpgsign = true

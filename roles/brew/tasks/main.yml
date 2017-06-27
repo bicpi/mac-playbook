@@ -32,7 +32,7 @@
     - homebrew/php/composer
     - homebrew/php/box
     - tree
-    - vault    
+    - vault
     - watch
     - wget
 
