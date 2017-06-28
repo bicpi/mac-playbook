@@ -1,10 +1,11 @@
 [user]
   name = Philipp Rieber
   email = philipp.rieber@ottonova.de
-
+  signingkey = C9F66375
 [core]
   excludesfile = ~/.gitignore
   attributesfile = ~/.gitattributes
-
 [commit]
   gpgsign = true
+[tag]
+	gpgsign = true
