@@ -31,6 +31,7 @@
     - homebrew/php/php71-mcrypt
     - homebrew/php/composer
     - homebrew/php/box
+    - terraform
     - tree
     - vault
     - watch
