@@ -1,0 +1,12 @@
+- name: Ensure npm
+  homebrew:
+    name: npm
+    state: latest
+    update_homebrew: yes
+
+- name: Install global npm packages
+  npm:
+    name: '{{ item }}'
+    global: yes
+  with_items:
+    - serverless

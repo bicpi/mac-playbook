@@ -25,3 +25,5 @@
       tags: [docker]
     - role: glances
       tags: [glances]
+    - role: npm
+      tags: [npm]
