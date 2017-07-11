@@ -29,6 +29,7 @@
     - jq
     - homebrew/php/php71
     - homebrew/php/php71-mcrypt
+    - homebrew/php/php71-gmp
     - homebrew/php/composer
     - homebrew/php/box
     - terraform
