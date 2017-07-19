@@ -13,6 +13,8 @@
       tags: [atom]
     - role: cask
       tags: [cask]
+    - role: httpie
+      tags: [httpie]
     - role: mas
       tags: [mas]
     - role: dotfiles

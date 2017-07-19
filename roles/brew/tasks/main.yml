@@ -25,6 +25,7 @@
     - findutils
     - git
     - go
+    - graphviz
     - httpie
     - jq
     - homebrew/php/php71
