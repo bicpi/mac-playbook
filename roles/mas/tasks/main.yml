@@ -29,6 +29,8 @@
       name: feedly
     - id: 876540291
       name: Copy'em Paste
+    - id: 928941247
+      name: OTP Manager
     #- id: 412448059
     #  name: ForkLift
     # Install 1Password from account website, otherwise this fails
