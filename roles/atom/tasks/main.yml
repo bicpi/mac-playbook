@@ -16,7 +16,8 @@
   with_items:
     - atom-beautify
     - split-diff
+    - print-atom
 
 - name: Upgrade all atom packages
   command: apm upgrade
-  changed_when: false  
+  changed_when: false
