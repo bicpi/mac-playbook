@@ -35,6 +35,7 @@
     - homebrew/php/composer
     - homebrew/php/box
     - terraform
+    - tldr
     - tree
     - vault
     - watch
