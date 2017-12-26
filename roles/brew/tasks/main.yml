@@ -26,6 +26,7 @@
     - git
     - go
     - graphviz
+    - groovy
     - httpie
     - jq
     - homebrew/php/php71
