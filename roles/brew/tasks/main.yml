@@ -35,6 +35,7 @@
     - homebrew/php/php71-xdebug
     - homebrew/php/composer
     - homebrew/php/box
+    - telnet
     - terraform
     - tldr
     - tree
